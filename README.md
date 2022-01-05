@@ -19,13 +19,13 @@ Rscript ./script/positionsFromDBSNP.r [options]
 
 ### Options:
 
---input=file with summary statistics  
---ID=column name with SNP ID  
---build=Genome Build, hg19 or hg38  
---outdir=Output directory  
---prefix=Prefix for output file name without path  
---cpus=CPUS  
---skip=Skip lines  
+--input=path to file with dbSNP IDs, e.g. summary statistics  
+--ID=column name with dbSNP IDs  
+--build=Genome Build: hg19 or hg38  
+--outdir=Path of output directory  
+--prefix=Prefix for output file name without path or extension  
+--cpus=Number of available CPUs for parallel runs (uses up to 64 for hg19 or 68 for hg38)  
+--skip=Skip lines of input file  
 
 ## Example command line:
 ```{bash}
