@@ -3,6 +3,9 @@ library("optparse")
 library("parallel")
 library("here")
 
+# Extend timeout to 60 min for download
+options(timeout=3600)
+
 source("./script/function.runParallel.r")
 
 option_list <- list(
