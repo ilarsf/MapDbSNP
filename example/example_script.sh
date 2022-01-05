@@ -1,9 +1,9 @@
 #!/bin/bash
 
-Rscript /net/junglebook/home/larsf/Projects/MapDbSNP/script/positionsFromDBSNP.r \
---input=/net/junglebook/home/larsf/Projects/MapDbSNP/example/example_input.txt \
+Rscript ./script/positionsFromDBSNP.r \
+--input=./example/example_input.txt \
 --ID=ID \
 --build=hg19 \
---outdir=/net/junglebook/home/larsf/Projects/MapDbSNP/example \
+--outdir=./example \
 --prefix=example \
---cpus=4
+--cpus=16
