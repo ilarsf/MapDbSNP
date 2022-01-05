@@ -1,5 +1,7 @@
 # MapDbSNP
-Add positions to data that only contains dbSNP IDs 
+
+* UNIX commands and Rscripts will add positions to data that only contains dbSNP IDs
+* Will download dbSNP151 from UCSC genome browser
 
 ## Required R packages
 
