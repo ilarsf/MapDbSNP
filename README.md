@@ -1,6 +1,12 @@
 # MapDbSNP
 Add positions to data that only contains dbSNP IDs 
 
+## Required R packages
+
+* data.table
+* optparse
+* parallel
+* here
 
 ```
 Rscript ./script/positionsFromDBSNP.r \
