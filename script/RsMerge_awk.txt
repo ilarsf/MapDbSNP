@@ -1,0 +1,14 @@
+#!/usr/bin/awk -f
+BEGIN {FS="\t" ; OFS="\t"}
+NR==FNR { 
+			$1 = "rs"$1
+			$2 = "rs"$2
+			SNP[$1]=$2; next
+		}
+{	
+	if($col in SNP) {
+		$col = SNP[$col]
+	}
+	print $0
+}
+

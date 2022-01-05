@@ -1,0 +1,10 @@
+#!/usr/bin/awk -f
+BEGIN {FS="\t" ; OFS="\t"}
+NR==FNR { 
+			SNP[$1]=$1; next
+		}
+{	
+	if( $4 in SNP ) {
+		print $0
+	}
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/awk -f
+BEGIN {FS="\t" ; OFS="\t"}
+NR==FNR { 
+			SNP1[$1]=$1; SNP2[$2]=$2; next
+		}
+{	
+	if($1":"$2":"$4":"$5 in SNP1 || $1":"$2":"$4":"$5 in SNP2 || $1 == "#CHROM" || $2 == "[2]POS") {
+		print $0
+	}
+}
